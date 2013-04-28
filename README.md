@@ -11,3 +11,10 @@ $ npm install
 $ node index.js
 $ open localhost:4000
 ```
+
+## Currently on fire.
+
+Better wait for
+https://github.com/Raynos/engine.io-client/pull/1 and
+https://github.com/Raynos/engine.io-client/pull/2
+to get merged in.
