@@ -1,0 +1,41 @@
+{
+  "name": "todo-web",
+  "description": "Web Frontend for ToDo",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/juliangruber/todo-web.git"
+  },
+  "homepage": "https://github.com/juliangruber/todo-web",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap test/*.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "engine.io-stream": "~0.2.1",
+    "todo-model": "~0.2.0",
+    "todo-server": "~0.0.0",
+    "browserify": "~2.13.2",
+    "ecstatic": "~0.4.2",
+    "crdt": "~3.5.1",
+    "sorta": "0.0.5",
+    "domready": "~0.2.11",
+    "hyperscript": "~1.1.1"
+  },
+  "devDependencies": {
+    "tap": "*"
+  },
+  "keywords": [
+    "todo",
+    "website",
+    "frontend",
+    "html"
+  ],
+  "author": {
+    "name": "Julian Gruber",
+    "email": "mail@juliangruber.com",
+    "url": "http://juliangruber.com"
+  },
+  "license": "MIT"
+}
