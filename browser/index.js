@@ -1,4 +1,4 @@
-var engine = require('engine.io-stream');
+var shoe = require('shoe');
 var Doc = require('crdt').Doc;
 var sorta = require('sorta');
 var ready = require('domready');
@@ -18,7 +18,7 @@ var Users = Model.Users;
  * Replication.
  */
 
-var ws = engine('/engine');
+var ws = shoe('/doc');
 ws.pipe(doc.createStream()).pipe(ws);
 
 /**

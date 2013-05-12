@@ -1,5 +1,5 @@
 var Server = require('todo-server');
-var Engine = require('engine.io-stream/server');
+var shoe = require('shoe');
 var http = require('http');
 var browserify = require('browserify');
 var ecstatic = require('ecstatic');
@@ -24,11 +24,11 @@ server.listen(4000, function () {
   console.log('~> http://localhost:4000');
 });
 
-var engine = Engine(function (con) {
+var sock = shoe(function (con) {
   todoServer.getDocument(function (err, doc) {
     if (err) return con.end(JSON.stringify(err));
     con.pipe(doc.createStream()).pipe(con);
   });
 });
 
-engine.attach(server, '/engine');
+sock.install(server, '/doc');

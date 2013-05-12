@@ -13,7 +13,6 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "engine.io-stream": "~0.3.0",
     "todo-model": "~0.2.0",
     "todo-server": "~0.0.0",
     "browserify": "~2.13.2",
@@ -21,7 +20,8 @@
     "crdt": "~3.5.1",
     "sorta": "0.0.5",
     "domready": "~0.2.11",
-    "hyperscript": "~1.1.1"
+    "hyperscript": "~1.1.1",
+    "shoe": "0.0.10"
   },
   "devDependencies": {
     "tap": "*"
