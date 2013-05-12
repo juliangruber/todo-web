@@ -20,7 +20,9 @@ var server = http.createServer(function (req, res) {
   serve(req, res);
 });
 
-server.listen(4000);
+server.listen(4000, function () {
+  console.log('~> http://localhost:4000');
+});
 
 var engine = Engine(function (con) {
   todoServer.getDocument(function (err, doc) {
