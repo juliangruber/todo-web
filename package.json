@@ -14,14 +14,14 @@
   },
   "dependencies": {
     "todo-model": "~0.2.0",
-    "todo-server": "~0.0.0",
-    "browserify": "~2.13.2",
-    "ecstatic": "~0.4.2",
-    "crdt": "~3.5.1",
+    "todo-server": "~0.1.0",
+    "browserify": "~13.1.1",
+    "ecstatic": "~2.1.0",
+    "crdt": "~3.6.4",
     "sorta": "0.0.5",
-    "domready": "~0.2.11",
-    "hyperscript": "~1.1.1",
-    "shoe": "0.0.10"
+    "domready": "~1.0.8",
+    "hyperscript": "~2.0.2",
+    "shoe": "0.0.15"
   },
   "devDependencies": {
     "tap": "*"
